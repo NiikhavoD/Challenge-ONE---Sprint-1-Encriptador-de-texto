@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge ONE | Sprint 1: Encriptador de texto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shorcut icon" href="img/logo.svg"/>
+    <script src="/js/encryptor.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <img src="img/Logo.svg" alt="alura" class="logo">
+        <div class="ppal">
+            <div>
+                <textarea id='inpTxt' name="textarea" class="encInput" placeholder="Ingrese el texto aquí..." autofocus="true"></textarea>
+            </div>
+            <div class="adv">
+                <img src="img/exclamation.svg" class="advice">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button id='encBtn' class="encTxt" onclick="encrypt()">Encriptar</button>
+                <button id='decBtn' class="decTxt" onclick="decrypt()">Desencriptar</button>
+            </div>
+        </div>
+        <div id='res' class="result">
+            <span id='rTxt' class="resTxt">
+
+            </span>
+            <div id="noTxtChange" class="noTxtInit">
+                <img src="/img/noTxtWhite.svg" id="noTxtImg" class="Img">
+                <div class="noTxt">
+                    <p id='noTxt1' class="noTxtTitle">
+                        Ningún mensaje fue encontrado
+                    </p>
+                    <p id='noTxt2' class="noTxtDes">
+                        Ingresa el texto que desees encriptar o desencriptar.
+                    </p>
+                </div>
+            </div>
+            <button id="copyBtn" class="copyTxt" onclick="copy()">Copiar</button>
+        </div>
+    </div>
+
+</body>

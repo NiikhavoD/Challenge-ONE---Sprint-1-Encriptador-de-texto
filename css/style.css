@@ -1,0 +1,317 @@
+:root{
+    /* Dark Blue Color */
+    --clr-darkblue-100: #168fff;
+    --clr-darkblue-200: #45a5ff;
+    --clr-darkblue-400: #73bcff;
+    --clr-darkblue-600: #a2d2ff;
+
+    /* Light Blue Color */
+    --clr-lightblue-100: #0085ff;
+    --clr-lightblue-200: #006acc;
+    --clr-lightblue-300: #005099;
+    --clr-lightblue-400: #003566;
+
+    /* Colors for Light Mode */
+    --clr-dark-100: #1C1C1C; /* For titles and bolt text */
+    --clr-dark-200: #585757; /* Body text */
+    --clr-dark-300: #969696; /* Small text and to fill icons*/
+    --clr-dark-400: #E8E8E8; /* Small details such as borders, dividers and line colors */
+
+    /* Colors for Dark Mode */
+    --clr-white-100: #e6e6e6;
+    --clr-white-200: #b3b3b3;
+    --clr-white-300: #666666;
+    --clr-white-400: #1a1a1a;
+
+    /* Background */
+    --clr-darkbg-100: #1e1e1e;
+    --clr-darkbg-200: #343434;
+    --clr-darkbluebg: #052440;
+    --clr-lightbg-100: #fafafa;
+    --clr-lightbg-200: #e1e1e1;
+    --clr-lightbluebg: #bfe0ff;
+}
+
+body{
+    background: var(--clr-lightbg-100);
+    color: var(--clr-dark-100);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.main{
+    margin-bottom: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ppal{
+    padding-top: 0px;
+    margin-top: 168px;
+    margin-left: 240px;
+    margin-bottom: auto;
+    margin-right: 40px;
+}
+
+.result{
+    margin: 40px;
+    height: 912px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+
+    width: 368px;
+    border-radius: 32px;
+    box-shadow: inset 0px 24px 32px -8px rgba(0, 0, 0, 0.7);
+    background: var(--clr-lightbg-200);
+    transition: 0.5s;
+}
+
+.resTxt{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--clr-dark-100);
+    visibility: hidden;
+}
+
+textarea{
+    border-color: unset;
+    border-style: unset;
+    border-width: unset;
+    resize: none;
+    outline: none;
+    overflow: auto;
+    text-transform: lowercase; 
+}
+
+.logo{
+    width: 48px;
+    height: 48px;
+    top: 40px;
+    left: 68px;
+    position: absolute;
+
+    transition: 0.1s;
+}
+
+.adv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.advice{
+    width: 16px;
+    height: 16px;
+
+    padding-right: 8px;
+    order: 0;
+    flex-grow: 0;
+    transition: 0.5s;
+}
+
+.adv>p{
+    font-size: 12px;
+    line-height: 150%;
+
+    color: var(--clr-white-300);
+    opacity: 0.8;
+    order: 1;
+    flex-grow: 0;
+    transition: 0.5s;
+}
+
+.encInput{
+    width: 680px;
+    height: 666px;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: var(--clr-lightbg-100);
+    color: var(--clr-dark-100);
+    transition: 0.5s;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px;
+}
+
+.copyTxt{
+    background-color: unset;
+    visibility: hidden;
+    border: 1px solid var(--clr-dark-400);
+    color: var(--clr-dark-400);
+    transition: 0.5s;
+}
+
+.encTxt{
+    background-color: var(--clr-lightblue-200);
+    color: var(--clr-white-100);
+    transition: 0.5s;
+}
+
+.decTxt{
+    background-color: var(--clr-lightbg-200);
+    color: var(--clr-darkblue-200);
+    transition: 0.5s;
+}
+
+button{
+    width: 328px;
+    height: 67px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.noTxtInit{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.noTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Img{
+    margin-bottom: 32px;
+    margin-top: 32px;
+    width: 336px;
+    height: 304px;
+    transition: 0.5s;
+}
+
+.noTxtTitle{
+    margin-top: 0px;
+    margin-bottom: 8px;
+    color: var(--clr-dark-100);
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    transition: 0.5s;
+}
+
+.noTxtDes{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    color: var(--clr-dark-200);
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 150%;
+    text-align: center;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    transition: 0.5s;
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: var(--clr-darkbg-100);
+        color: var(--clr-white-100);
+        transition: 0.5s;
+    }
+
+    .result{
+        background: var(--clr-darkbg-200);
+        transition: 0.5s;
+    }
+    
+    .encInput{
+        background-color: var(--clr-darkbg-100);
+        color: var(--clr-white-100);
+        transition: 0.5s;
+    }
+    
+    .adv>p{
+        color: var(--clr-dark-300);
+        transition: 0.5s;
+    }
+    
+    .logo{
+        filter: invert(35%) sepia(85%) saturate(2800%) hue-rotate(200deg) brightness(120%) contrast(170%);
+        transition: 0.1s;
+    }
+
+    .copyTxt{
+        background-color: unset;
+        border: 1px solid var(--clr-white-400);
+        color: var(--clr-white-400);
+        transition: 0.5s;
+    }
+    
+    .encTxt{
+        background-color: var(--clr-darkblue-200);
+        color: var(--clr-white-100);
+        transition: 0.5s;
+    }
+    
+    .decTxt{
+        background-color: var(--clr-lightbg-200);
+        color: var(--clr-darkblue-200);
+        transition: 0.5s;
+    }
+
+    .Img{
+        content: url('/img/noTxtDark.svg');
+        width: auto;
+        transition: 0.5s;
+    }
+
+    .noTxtTitle{
+        color: var(--clr-white-100);
+        transition: 0.5s;
+    }
+    
+    .noTxtDes{
+        color: var(--clr-white-200);
+        transition: 0.5s;
+    }
+}
